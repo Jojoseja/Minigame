@@ -3,7 +3,14 @@ from bottle_randomizer import *
 
 # Game start func where I input the number of bottles
 def game_start():
-    num_bot = input("Number of bottles: ")
+    try:
+        num_bot = int(input("Number of bottles: "))
+        if num_bot > 9:
+            print("type a number between 1 and 9")
+        if num_bot <= 1:
+            print("type a number between 2 and 9")
+    except ValueError:
+        print("Try a number! ")
     cor_guess = cor_ans(num_bot)
     game(cor_guess)
 

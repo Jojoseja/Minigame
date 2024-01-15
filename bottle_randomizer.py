@@ -3,7 +3,6 @@ import random
 
 
 def cor_ans(num_bot):
-    num_bot = int(num_bot)
     com = ""
     cor_gue = ""
     for i in range(1, num_bot + 1):
