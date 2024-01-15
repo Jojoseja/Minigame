@@ -1,18 +1,18 @@
 import random
-# answer = var; range -> (1, var+1)
+# Func for number of bottles given a number of "bottles"
 
 
-def bottles(num_bot):
-    number_bottles = int(num_bot)
-    kawai = ""
-    correct_guess = ""
-    for i in range(1, number_bottles + 1):
-        kawai += str(i)
+def cor_ans(num_bot):
+    num_bot = int(num_bot)
+    com = ""
+    cor_gue = ""
+    for i in range(1, num_bot + 1):
+        com += str(i)
     game = True
     while game:
-        awa = str(random.randrange(1, len(kawai) + 1))
-        if awa not in correct_guess:
-            correct_guess += str(awa)
-        if len(correct_guess) == len(kawai):
+        num = str(random.randrange(1, len(com) + 1))
+        if num not in cor_gue:
+            cor_gue += str(num)
+        if len(cor_gue) == len(com):
             game = False
-    return correct_guess
+    return cor_gue
