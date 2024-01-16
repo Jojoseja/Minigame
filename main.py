@@ -8,7 +8,7 @@ def game_start():
         try:
             num_bot = int(input("Number of bottles: "))
             if num_bot > 9:
-                print("type a number between 1 and 9")
+                print("type a number between 2 and 9")
                 game_start()
             if num_bot <= 1:
                 print("type a number between 2 and 9")
